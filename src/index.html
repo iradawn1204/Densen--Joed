@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="C:\Users\mceea\Desktop\Densen-Law\dist\style\output.css" />
+    <link rel="stylesheet" href="..\dist\style\output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin >
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
@@ -51,31 +51,31 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center mb-8 p-5">
       <!--service 1-->
-    <div class=" w-[95%] h-[70%] bg-Densen_green rounded-lg shadow mt-5 mb-[50%]">
-      <a href="#">
-          <img class="container rounded-t-lg h-[79%]" src="./assets/images/image-Service1.webp" alt="service1" />
-      </a>
+    <div class=" w-[95%] h-[70%] bg-Densen_green rounded-lg shadow mt-5 mb-[50%]" id="container" onmouseover="fadeIn()" onmouseout="fadeOut()" >
+    
+          <img class="container rounded-t-lg h-[79%]" src="./assets/images/image-Service1.webp" alt="service1"  id="image" />
+      
 
-      <div class=" container overflow-hidden ">
+      <div class=" container overflow-hidden" id="line">
 
         <div> 
-          <h1 class="md:w-[300px] md:min-w-[425px] sm:min-w-[250px] h-2 w-[100%] bg-gradient-to-r from-yellow-500 to-amber-200">
+          <h1 class="md:w-[300px] md:min-w-[425px] sm:min-w-[250px] h-2 w-[100%] bg-gradient-to-r from-yellow-500 to-amber-200   " >
         </h1>
       </div>
 
-          <a href="#">
-              <h5 class=" container bg-Densen_green p-8 text-2xl text-neutral-50 font-semibold font-fraunces2 text-center justify-center rounded-b-lg hover:">Legal Consultation and Counseling</h5>
-          </a>
+ 
+              <h5 class=" container bg-Densen_green p-8 text-2xl text-neutral-50 font-semibold font-fraunces2 text-center justify-center rounded-b-lg hover:" id="text">Legal Consultation and Counseling</h5>
+
           
       </div>
     </div>
   <!--service 2-->
-    <div class="relative w-[95%] h-[69.5%]  bg-Densen_green rounded-lg shadow mt-5 mb-[50%]">
+    <div class="relative w-[95%] h-[69.5%]  bg-Densen_green rounded-lg shadow mt-5 mb-[50%]" id="container2" onmouseover="fadeIn2()" onmouseout="fadeOut2()">
       <a href="#">
-          <img class="container rounded-t-lg h-[79%]" src="./assets/images/image-Service2.webp" alt="service2" />
+          <img class="container rounded-t-lg h-[79%]" src="./assets/images/image-Service2.webp" alt="service2"  id="image2" />
      </a>
 
-      <div class=" container overflow-hidden">
+      <div class=" container overflow-hidden" id="line2">
 
         <div> 
           <h1 class="md:w-[300px] md:min-w-[425px] sm:min-w-[250px] h-2 w-[100%] bg-gradient-to-r from-yellow-500 to-amber-200">
@@ -93,12 +93,12 @@
     </div>
 
 <!--service 3-->
-    <div class="relative w-[95%] h-[73%]  bg-Densen_green rounded-lg shadow mt-5 mb-[50%]">
+    <div class="relative w-[95%] h-[73%]  bg-Densen_green rounded-lg shadow mt-5 mb-[50%]" id="container3" onmouseover="fadeIn3()" onmouseout="fadeOut3()">
       <a href="#">
-          <img class="container rounded-t-lg h-[75%]" src="./assets/images/image-Service3.webp" alt="service3" />
+          <img class="container rounded-t-lg h-[75%]" src="./assets/images/image-Service3.webp" alt="service3" id="image3" />
       </a>
 
-      <div class=" container overflow-hidden">
+      <div class=" container overflow-hidden" id="line3">
 
         <div> 
           <h1 class="md:w-[300px] md:min-w-[425px] sm:min-w-[250px] h-2 w-[100%] bg-gradient-to-r from-yellow-500 to-amber-200">
@@ -113,12 +113,12 @@
     </div>
 
 <!--service 4-->
-    <div class="relative w-[95%] h-[65%] bg-Densen_green rounded-lg shadow mt-5 mb-5">
+    <div class="relative w-[95%] h-[65%] bg-Densen_green rounded-lg shadow mt-5 mb-5" id="container4" onmouseover="fadeIn4()" onmouseout="fadeOut4()">
       <a href="#">
-          <img class="container rounded-t-lg sc h-[85%]" src="./assets/images/image-Service4.webp" alt="service4" />
+          <img class="container rounded-t-lg sc h-[85%]" src="./assets/images/image-Service4.webp" alt="service4"  id="image4"/>
       </a>
 
-      <div class=" container overflow-hidden">
+      <div class=" container overflow-hidden" id="line4">
 
         <div> 
           <h1 class="md:w-[300px] md:min-w-[425px] sm:min-w-[250px] h-2 w-[100%] bg-gradient-to-r from-yellow-500 to-amber-200">
@@ -140,4 +140,112 @@
 
     </main>
   </body>
+  <script>
+
+function fadeIn() {
+ 
+  var image = document.getElementById("image");
+  image.style.opacity = 0 ;
+
+
+  var line = document.getElementById("line");
+
+
+  var line = document.getElementById("line");
+line.style.transform = "translateY(-261%)";
+
+}
+function fadeOut() {
+  
+
+
+  var image = document.getElementById("image");
+  image.style.opacity = 1;
+
+  
+  var line = document.getElementById("line");
+line.style.transform = "translateY(0%)";
+}
+
+
+
+function fadeIn2() {
+ 
+ var image = document.getElementById("image2");
+ image.style.opacity = 0 ;
+
+
+ var line = document.getElementById("line2");
+
+
+ var line = document.getElementById("line2");
+line.style.transform = "translateY(-215%)";
+
+}
+function fadeOut2() {
+ 
+
+
+ var image = document.getElementById("image2");
+ image.style.opacity = 1;
+
+ 
+ var line = document.getElementById("line2");
+line.style.transform = "translateY(0%)";
+}
+
+
+function fadeIn3() {
+ 
+ var image = document.getElementById("image3");
+ image.style.opacity = 0 ;
+
+
+ var line = document.getElementById("line3");
+
+
+ var line = document.getElementById("line3");
+line.style.transform = "translateY(-261%)";
+
+}
+function fadeOut3() {
+ 
+
+
+ var image = document.getElementById("image3");
+ image.style.opacity = 1;
+
+ 
+ var line = document.getElementById("line3");
+line.style.transform = "translateY(0%)";
+}
+
+
+function fadeIn4() {
+ 
+ var image = document.getElementById("image4");
+ image.style.opacity = 0 ;
+
+
+ var line = document.getElementById("line4");
+
+
+ var line = document.getElementById("line4");
+line.style.transform = "translateY(-261%)";
+
+}
+function fadeOut4() {
+ 
+
+
+ var image = document.getElementById("image4");
+ image.style.opacity = 1;
+
+ 
+ var line = document.getElementById("line4");
+line.style.transform = "translateY(0%)";
+}
+
+
+  </script>
 </html>
